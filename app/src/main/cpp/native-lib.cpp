@@ -1,6 +1,5 @@
 #include <jni.h>
 #include <string>
-#include <oboe/Definitions.h>
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_ezinwa_nativeaudioperformance_MainActivity_stringFromJNI(

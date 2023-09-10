@@ -21,8 +21,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                arguments += "-DANDROID_STL=c++_shared"
-                abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+                arguments +="-DANDROID_STL=c++_shared"
             }
         }
     }
@@ -50,7 +49,7 @@ android {
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
+            version = "3.18.1"
         }
     }
     buildFeatures {
